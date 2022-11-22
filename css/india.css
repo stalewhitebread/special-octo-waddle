@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body {
+    font-family:'Josefin Sans', sans-serif;
+    background-image: url('https://imgs.search.brave.com/Hh21VZK4MFPuC623F3WLhuSvgGha-9JFMZS2X493y8I/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC96N3RYUGt6/LmpwZw');
+}
+
+.solid-bg {
+    background-color: burlywood;  
+    color: black;
+}
+.maintxt {
+    position: relative;
+  }
+.maintxt > img,
+  .overlay-text {
+    position: absolute;
+    color:white;
+  }

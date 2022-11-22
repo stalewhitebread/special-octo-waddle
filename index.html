@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ignoramus india</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/india.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+          <li>
+              <a class="navbar-brand" href="#">India Igloo</a>
+          </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://github.com/stalewhitebread/friendly-train">|See the Code|</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://validator.w3.org/check?uri=https%3A%2F%2Fstalewhitebread.github.io%2Ffriendly-train%2F&charset=%28detect+automatically%29&doctype=Inline&group=0">|Check page validity|</a>
+          </li>
+      </ul>
+
+  </nav>
+
+      <!--basic checkbox-->   
+      <div class="row p-1.5 m-1.5">
+        <div class="col-md-5 card">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="check1"
+              name="option1"
+              value="html"
+            />
+            <!--3 interactable options-->
+            <label class="form-check-label" for="check1">are you sad?</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="check2"
+              name="option2"
+              value="javascript"
+            />
+            <label class="form-check-label" for="check2">mad?</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" value="python" />
+            <label class="form-check-label">rad???</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row p-1.5 m-1.5">
+        <!--1st data-->
+        <div class="col-md-5 card">
+          <div class="card-body">
+            <!--ask user for string of numbers only-->
+            <h4 class="card-title">Government Identification.</h4>
+            <h5>What's your social security number?</h5>
+            <!--check for only numbers-->
+            <label for="noAlpha" class="form-label">SSN: </label>
+            <input
+              id="noAlpha"
+              class="form-control"
+              type="text"
+              placeholder="Enter SSN Number (only numbers)"
+              name="noAlpha"
+            />
+            <!--2nd data-->
+            <p class="card-footer"></p>    
+            <!--ask for favorite fish-->      
+            <h4 class="card-title">Enter favorite fish.</h4>
+            <h5>fishes aren't named after numbers...</h5>
+            <!--run funtions to check for only letters-->
+            <label for="noNumbers" class="form-label">Fish naem</label>
+            <input
+              id="noNumbers"
+              class="form-control"
+              type="text"
+              placeholder="Enter Fish Naem (no numbers)"
+              name="noNumbers"
+            />
+            <!-- 3rd info  -->
+            <p class="card-footer"></p>
+            <h4 class="card-title">Hmmmmm</h4>
+            <h5>Is this a lame website?</h5>
+            <!-- user option no or yes -->
+            <h6>Honestly?</h6>
+            <label for="entertained" class="form-label">No</label>
+            <input
+              id="yesEnertained"
+              value="Yes"
+              name="entertained"
+              type="radio"
+            />
+            <label for="entertained" class="form-label">Yes</label>
+            <input
+              id="noEntertained"
+              value="No"
+              name="entertained"
+              type="radio"
+            />
+            <!-- if yes, pop up additional dialogue box -->
+            <hr />
+            <div id="divExplain" style="display: none">
+              <label for="explainNotEntertain">I know... do you forgive me?</label>
+              <input type="text" id="explainNotEntertain" />
+            </div>
+          </div>
+    
+      </div>
+      <!--magic button for reading in json-->
+      <div class="col-md-3 mx-8 p-2">
+        <div class="card">
+            <div class="container">
+                <div id="div1">
+                    <h2>Like, my favorite words or something</h2>
+     
+                    <button id="btnLoadData" class="btn btn-secondary">load json</button>
+                </div>
+            </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- very very important pathways info-->
+    <script src="scripts/india.js"></script>
+    <script src="scripts/fetchWords.js"></script>
+  </body>
+</html>
